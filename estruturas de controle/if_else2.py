@@ -1,7 +1,7 @@
 def age_group(age_informed: int):
     if 0 <= age_informed < 18:
         return 'Minor'
-    elif age_informed in range(18, 64):
+    elif age_informed in range(18, 65):
         return "Adult"
     elif age_informed in range(65, 100):
         return "Best age"
