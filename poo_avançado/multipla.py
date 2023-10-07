@@ -1,29 +1,29 @@
 class Animal:
     @property
     def capacidades(self):
-        return ('dormir', 'come', 'beber')
+        return ('dormir', 'comer', 'beber')
 
 class Homem(Animal):
     @property
     def capacidades(self):
-        return super().capacidades + ('amar', "falar", 'estudar')
+        return super().capacidades + ('amar', 'falar', 'estudar')
 
 class Aranha(Animal):
     @property
     def capacidades(self):
-        return super().capacidades + ('fazer teis', 'andar nas paredes')
+        return super().capacidades + ('fazer teias', 'andar nas paredes')
 
 class HomenAranha(Homem, Aranha):
     @property
     def capacidades(self):
-        return super().capacidades + ('combater o crime')
+        return super().capacidades + ('combater o crime',)
 
 if __name__ == '__main__':
-    fulano = Homem
+    fulano = Homem()
     print(f"Fulano: {fulano.capacidades}")
 
-    aranha = Aranha
+    aranha = Aranha()
     print(f"Aranha: {aranha.capacidades}")
 
-    cicrano = HomenAranha
-    print(f"Aranha: {cicrano.capacidades}")
+    cicrano = HomenAranha()
+    print(f"Homem-Aranha: {cicrano.capacidades}")
