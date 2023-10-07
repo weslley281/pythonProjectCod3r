@@ -7,10 +7,6 @@ class Humano:
         self.especie = "Do Outro Time"
         return self
 
-    @staticmethod
-    def especie():
-        adjetivos = ('Normal', 'Doido', "Maluco", "Retardado")
-
 if __name__ == '__main__':
     fulano = Humano("Fulano")
     # Humano.do_outro_time(fulano)
